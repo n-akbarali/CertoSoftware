@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certo Software — Award-Winning Mobile Security & Anti-Spyware</title>
+    <!-- Website Tab Favicon Icon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%23FFC247'/%3E%3Cpath d='M20 6.5L8.5 11.8V20.5C8.5 28 13.4 34.6 20 36.8C26.6 34.6 31.5 28 31.5 20.5V11.8L20 6.5Z' fill='%230A0724'/%3E%3Cpath d='M16.2 21.3L19 24.1L24.8 17.3' stroke='%23FFC247' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 Free CSS ONLY (Zero JS) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+
+    <!-- ========================================================================
+         PURE-CSS INTERACTIVE "30-SECOND SECURITY SELF-CHECK" MODAL
+         ======================================================================== -->
+    <input type="checkbox" id="scanner-modal-toggle" class="audit-modal-checkbox">
+    <div class="audit-modal-backdrop">
+        <div class="audit-modal-box">
+            <label for="scanner-modal-toggle" class="modal-close-btn" aria-label="Close Modal">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <span class="section-eyebrow eyebrow-amber">
+                <i class="fa-solid fa-shield-virus"></i> Interactive Threat Diagnostic
+            </span>
+            <h3>30-Second Phone Spyware Check</h3>
+            <p>Select any unusual behavior you have noticed on your iPhone or Android device:</p>
+
+            <div class="symptom-checklist">
+                <label class="symptom-option">
+                    <input type="checkbox">
+                    <span><i class="fa-solid fa-battery-quarter"></i> Battery drains unusually fast or phone feels warm when idle</span>
+                </label>
+                <label class="symptom-option">
+                    <input type="checkbox">
+                    <span><i class="fa-solid fa-ear-listen"></i> Someone knows private details or conversations only said near your phone</span>
+                </label>
+                <label class="symptom-option">
+                    <input type="checkbox">
+                    <span><i class="fa-solid fa-Location-dot"></i> Green/orange microphone or camera indicator dot appears randomly</span>
+                </label>
+                <label class="symptom-option">
+                    <input type="checkbox">
+                    <span><i class="fa-solid fa-sliders"></i> Unknown configuration profiles, keyboards, or unfamiliar apps installed</span>
+                </label>
+            </div>
+
+            <div class="audit-result-banner">
+                <div class="audit-safe-text">
+                    <i class="fa-solid fa-circle-check"></i> Select one or more symptoms above to evaluate your spyware exposure level.
+                </div>
+                <div class="audit-warning-text">
+                    <i class="fa-solid fa-triangle-exclamation"></i> ELEVATED RISK DETECTED: Hidden stalkerware often masks itself from standard settings. Run a deep Certo scan immediately.
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                <a href="#pricing" class="btn btn-amber" style="flex: 1;">
+                    Scan My Phone Now <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <label for="scanner-modal-toggle" class="btn btn-glass-light">
+                    Close
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================
+         1. STICKY GLASSMORPHIC HEADER WITH ANIMATED MOBILE BURGER & DRAWER
+         ======================================================================== -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="logo" aria-label="Certo Home">
+                <!-- Inline SVG used ONLY for the main Certo brand logo mark -->
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="11" fill="#FFC247"/>
+                    <path d="M20 6.5L8.5 11.8V20.5C8.5 28 13.4 34.6 20 36.8C26.6 34.6 31.5 28 31.5 20.5V11.8L20 6.5Z" fill="#0A0724"/>
+                    <path d="M16.2 21.3L19 24.1L24.8 17.3" stroke="#FFC247" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="brand-font">Certo</span>
+            </a>
+
+            <!-- 100% Pure CSS Mobile Burger Checkbox Hack -->
+            <input type="checkbox" id="mobile-menu-toggle" class="nav-toggle-checkbox">
+
+            <!-- Mobile Header Right Controls (Animated Burger Button) -->
+            <div class="mobile-header-quick">
+                <label for="mobile-menu-toggle" class="burger-btn" aria-label="Toggle Mobile Navigation">
+                    <span class="burger-status-dot" title="Protection Engine Online"></span>
+                    <span class="burger-lines-box">
+                        <span class="burger-line line-1"></span>
+                        <span class="burger-line line-2"></span>
+                        <span class="burger-line line-3"></span>
+                    </span>
+                </label>
+            </div>
+
+            <!-- Clickable Glass Backdrop Overlay to Close Mobile Drawer -->
+            <label for="mobile-menu-toggle" class="mobile-backdrop" aria-label="Close Mobile Menu Backdrop"></label>
+
+            <!-- Navigation Wrapper (Desktop Navbar + Mobile Slide-Over Glassmorphic Drawer) -->
+            <div class="nav-wrapper mobile-drawer">
+                <!-- Mobile Drawer Top Bar (Visible on Mobile/Tablet) -->
+                <div class="drawer-mobile-header">
+                    <div class="drawer-brand-title">
+                        <i class="fa-solid fa-shield-halved" style="color: var(--amber);"></i>
+                        <span>Certo Navigation</span>
+                        <span class="drawer-brand-badge">v6.4</span>
+                    </div>
+                    <label for="mobile-menu-toggle" class="drawer-close-btn" aria-label="Close Menu">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <ul class="nav-links">
+                    <li class="has-dropdown">
+                        <a href="#os-platform"><i class="fa-solid fa-cube" style="color: var(--amber); font-size: 13px;"></i> Products <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#os-platform">
+                                <div class="dropdown-icon-box"><i class="fa-brands fa-apple"></i></div>
+                                <div class="dropdown-item-text">
+                                    <strong>Certo AntiSpy (iOS)</strong>
+                                    <span>Deep USB backup &amp; stalkerware scan</span>
+                                </div>
+                            </a>
+                            <a href="#os-platform">
+                                <div class="dropdown-icon-box"><i class="fa-brands fa-android"></i></div>
+                                <div class="dropdown-item-text">
+                                    <strong>Certo Mobile Security</strong>
+                                    <span>Real-time Android spyware &amp; root protection</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="#features"><i class="fa-solid fa-shield-halved" style="color: var(--amber); font-size: 13px;"></i> Capabilities</a></li>
+                    <li><a href="#pricing"><i class="fa-solid fa-tag" style="color: var(--amber); font-size: 13px;"></i> Pricing</a></li>
+                    <li class="has-dropdown">
+                        <a href="#insights"><i class="fa-solid fa-book-open" style="color: var(--amber); font-size: 13px;"></i> Resources <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#insights">
+                                <div class="dropdown-icon-box"><i class="fa-solid fa-newspaper"></i></div>
+                                <div class="dropdown-item-text">
+                                    <strong>Research &amp; Insights</strong>
+                                    <span>Latest mobile cyber threat guides</span>
+                                </div>
+                            </a>
+                            <a href="#faq">
+                                <div class="dropdown-icon-box"><i class="fa-solid fa-circle-question"></i></div>
+                                <div class="dropdown-item-text">
+                                    <strong>Help Center &amp; FAQs</strong>
+                                    <span>24/7 cyber specialist support</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Mobile Slide-Over Accent Cards & Collapsible Resources Sub-Menu -->
+                <div class="drawer-mobile-Accordion">
+                    <a href="#os-platform" class="mobile-nav-card">
+                        <div class="mobile-nav-card-left">
+                            <div class="mobile-nav-icon"><i class="fa-brands fa-apple"></i></div>
+                            <div class="mobile-nav-text">
+                                <span>iPhone AntiSpy</span>
+                                <small>Deep iOS backup &amp; stalkerware forensics</small>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-right" style="color: var(--amber); font-size: 13px;"></i>
+                    </a>
+
+                    <a href="#os-platform" class="mobile-nav-card">
+                        <div class="mobile-nav-card-left">
+                            <div class="mobile-nav-icon"><i class="fa-brands fa-android"></i></div>
+                            <div class="mobile-nav-text">
+                                <span>Android Security</span>
+                                <small>Real-time APK &amp; keylogger protection</small>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-right" style="color: var(--amber); font-size: 13px;"></i>
+                    </a>
+
+                    <a href="#features" class="mobile-nav-card">
+                        <div class="mobile-nav-card-left">
+                            <div class="mobile-nav-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="mobile-nav-text">
+                                <span>Capabilities</span>
+                                <small>6-layer spyware &amp; OS integrity defense</small>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-right" style="color: var(--amber); font-size: 13px;"></i>
+                    </a>
+
+                    <a href="#pricing" class="mobile-nav-card">
+                        <div class="mobile-nav-card-left">
+                            <div class="mobile-nav-icon"><i class="fa-solid fa-tag"></i></div>
+                            <div class="mobile-nav-text">
+                                <span>Pricing Plans</span>
+                                <small>Save 40% on annual protection</small>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-right" style="color: var(--amber); font-size: 13px;"></i>
+                    </a>
+
+                    <!-- Collapsible <details> Sub-Menu for Resources -->
+                    <details class="mobile-details-group">
+                        <summary>
+                            <div class="mobile-nav-card-left">
+                                <div class="mobile-nav-icon"><i class="fa-solid fa-book-open"></i></div>
+                                <div class="mobile-nav-text">
+                                    <span>Resources &amp; Help</span>
+                                    <small>Threat guides, research &amp; 24/7 FAQ</small>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </summary>
+                        <div class="mobile-submenu-list">
+                            <a href="#insights"><i class="fa-solid fa-newspaper"></i> Mobile Threat Insights</a>
+                            <a href="#faq"><i class="fa-solid fa-circle-question"></i> Frequently Asked Questions</a>
+                            <a href="#os-platform"><i class="fa-solid fa-laptop-medical"></i> iOS &amp; Android Setup Guide</a>
+                        </div>
+                    </details>
+                </div>
+
+                <!-- Action Buttons (Desktop & Mobile Drawer) -->
+                <div class="header-actions">
+                    <label for="scanner-modal-toggle" class="btn-header-audit">
+                        <i class="fa-solid fa-crosshairs"></i> 30-Sec Spyware Check
+                    </label>
+                    <a href="#pricing" class="btn btn-violet btn-signin">
+                        <i class="fa-solid fa-right-to-bracket"></i> Sign in
+                    </a>
+                </div>
+
+                <!-- Mobile Drawer Bottom CTA & Live Protection Badge -->
+                <div class="drawer-mobile-footer">
+                    <a href="#pricing" class="btn btn-amber" style="width: 100%;">
+                        Get Certo Now <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <div class="drawer-status-pill">
+                        <span class="drawer-status-dot"></span>
+                        <span><strong>Threat Lab Live:</strong> 450,000+ Stalkerware Signatures Active</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================================================
+         3. HERO SECTION WITH INTERACTIVE 3D PHONE & LIVE CSS RADAR SCANNER
+         ======================================================================== -->
+    <section class="hero-section">
+        <div class="mesh-orb orb-violet"></div>
+        <div class="mesh-orb orb-amber"></div>
+
+        <div class="container hero-grid">
+            <!-- Left Column -->
+            <div class="hero-content">
+                <div class="hero-top-icon-badge">
+                    <div class="hero-crown-icon">
+                        <i class="fa-solid fa-shield-cat"></i>
+                    </div>
+                    <div class="trust-badge-pill" style="margin-bottom: 0;">
+                        <span class="trust-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span>Rated <strong>4.9/5</strong> by 120,000+ protected users</span>
+                    </div>
+                </div>
+
+                <h1>Your mobile privacy is <span class="text-gradient-amber">our mission.</span></h1>
+                <p>
+                    Think someone is monitoring your calls, texts, or location? Our award-winning anti-spyware engine detects and neutralizes hidden stalkerware on iPhone &amp; Android in minutes.
+                </p>
+
+                <div class="hero-cta-group">
+                    <a href="#os-platform" class="btn btn-amber">
+                        <i class="fa-brands fa-apple"></i> Get Certo for iPhone <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#os-platform" class="btn btn-glass-light">
+                        <i class="fa-brands fa-android"></i> Get Certo for Android
+                    </a>
+                </div>
+
+                <div class="hero-telemetry">
+                    <div class="telemetry-item">
+                        <strong>99.9<span>%</span></strong>
+                        <small>Stalkerware Detection</small>
+                    </div>
+                    <div class="telemetry-item">
+                        <strong>2.4M<span>+</span></strong>
+                        <small>Devices Protected</small>
+                    </div>
+                    <div class="telemetry-item">
+                        <strong>Zero</strong>
+                        <small>Private Data Logged</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Interactive Pure-CSS Phone Scanner -->
+            <div class="hero-phone-stage">
+                <!-- Hidden Checkbox to Toggle Phone Screen Mode -->
+                <input type="checkbox" id="phone-mode-toggle" class="phone-mode-checkbox">
+
+                <!-- Interactive Mode Switcher Pill -->
+                <label for="phone-mode-toggle" class="phone-mode-switcher" title="Click to switch phone screen view">
+                    <span class="mode-pill mode-pill-scan">
+                        <i class="fa-solid fa-satellite-dish"></i> Live Radar Scan
+                    </span>
+                    <span class="mode-pill mode-pill-report">
+                        <i class="fa-solid fa-shield-halved"></i> Threat Report
+                    </span>
+                </label>
+
+                <!-- 4 Floating Glassmorphic 3D Cards -->
+                <div class="float-card float-card-1">
+                    <div class="float-icon icon-coral"><i class="fa-solid fa-microphone-slash"></i></div>
+                    <div class="float-meta">
+                        <strong>Hidden Mic Access</strong>
+                        <span>Blocked 2m ago</span>
+                    </div>
+                </div>
+
+                <div class="float-card float-card-2">
+                    <div class="float-icon icon-amber"><i class="fa-solid fa-location-crosshairs"></i></div>
+                    <div class="float-meta">
+                        <strong>GPS Stalkerware</strong>
+                        <span>mSpy Signature Neutralized</span>
+                    </div>
+                </div>
+
+                <div class="float-card float-card-3">
+                    <div class="float-icon icon-emerald"><i class="fa-solid fa-user-shield"></i></div>
+                    <div class="float-meta">
+                        <strong>iOS Integrity</strong>
+                        <span>No Jailbreak Tampering</span>
+                    </div>
+                </div>
+
+                <div class="float-card float-card-4">
+                    <div class="float-icon icon-violet"><i class="fa-solid fa-key"></i></div>
+                    <div class="float-meta">
+                        <strong>Dark Web Monitor</strong>
+                        <span>0 Leaked Passwords</span>
+                    </div>
+                </div>
+
+                <!-- Smartphone Chassis -->
+                <div class="phone-chassis">
+                    <div class="phone-inner-screen">
+                        <div>
+                            <div class="phone-dynamic-island">
+                                <span class="island-mic-dot"></span>
+                                <span class="island-cam-dot"></span>
+                            </div>
+
+                            <div class="phone-top-bar">
+                                <span><i class="fa-solid fa-shield-halved" style="color: var(--amber);"></i> Certo Engine v6.4</span>
+                                <span><i class="fa-solid fa-wifi"></i> <i class="fa-solid fa-battery-full"></i></span>
+                            </div>
+
+                            <!-- VIEW A: LIVE RADAR SCAN -->
+                            <div class="screen-view-scan">
+                                <div class="radar-circle-wrap">
+                                    <div class="radar-sweep-beam"></div>
+                                    <div class="radar-center-core">
+                                        <i class="fa-solid fa-user-secret"></i>
+                                        <span>Scanning</span>
+                                    </div>
+                                </div>
+
+                                <div class="scan-progress-box">
+                                    <div class="scan-progress-header">
+                                        <span>Deep System &amp; Keylogger Audit</span>
+                                        <span style="color: var(--amber);">Active...</span>
+                                    </div>
+                                    <div class="scan-progress-track">
+                                        <div class="scan-progress-fill"></div>
+                                    </div>
+                                </div>
+
+                                <div class="phone-check-rows">
+                                    <div class="phone-row-card">
+                                        <span class="phone-row-left"><i class="fa-solid fa-eye-slash"></i> Hidden Stalkerware</span>
+                                        <span class="tag-danger">2 Quarantined</span>
+                                    </div>
+                                    <div class="phone-row-card">
+                                        <span class="phone-row-left"><i class="fa-solid fa-keyboard"></i> Custom Keyloggers</span>
+                                        <span class="tag-safe">Clean</span>
+                                    </div>
+                                    <div class="phone-row-card">
+                                        <span class="phone-row-left"><i class="fa-solid fa-compass"></i> AirTag &amp; GPS Beacons</span>
+                                        <span class="tag-safe">Verified</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- VIEW B: COMPLETED THREAT REPORT -->
+                            <div class="screen-view-report">
+                                <div class="report-shield-hero">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <h4>100% Protected &amp; Clean</h4>
+                                    <p>All 3 hidden threats have been permanently removed</p>
+                                </div>
+
+                                <div class="phone-check-rows">
+                                    <div class="phone-row-card">
+                                        <span class="phone-row-left"><i class="fa-solid fa-bug-slash"></i> FlexiSPY Agent</span>
+                                        <span class="tag-safe">Removed</span>
+                                    </div>
+                                    <div class="phone-row-card">
+                                        <span class="phone-row-left"><i class="fa-solid fa-microphone-lines-slash"></i> Background Audio Tap</span>
+                                        <span class="tag-safe">Revoked</span>
+                                    </div>
+                                    <div class="phone-row-card">
+                                        <span class="phone-row-left"><i class="fa-solid fa-file-shield"></i> Malicious VPN Profile</span>
+                                        <span class="tag-safe">Deleted</span>
+                                    </div>
+                                    <div class="phone-row-card">
+                                        <span class="phone-row-left"><i class="fa-solid fa-lock"></i> OS Bootloader Check</span>
+                                        <span class="tag-safe">Intact</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="phone-bottom-hint">
+                            <i class="fa-solid fa-hand-pointer"></i> Click toggle above phone to switch views
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+         4. INFINITE PURE-CSS SOCIAL PROOF MARQUEE (#FFC247)
+         ======================================================================== -->
+    <section class="reviews-marquee-section">
+        <div class="container">
+            <div class="reviews-header-flex">
+                <h2>Loved by thousands of iPhone and Android users worldwide</h2>
+                <div class="rating-summary-pill">
+                    <i class="fa-solid fa-award"></i>
+                    <div>
+                        <strong style="display: block; font-size: 15px;">App Store &amp; Play Store</strong>
+                        <span style="font-size: 12.5px; color: var(--text-light-muted);">4.9 ★ Average Customer Rating</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Continuous Pure-CSS Marquee (Pauses on Hover) -->
+        <div class="marquee-viewport">
+            <div class="marquee-track">
+                <!-- Card 1 -->
+                <article class="review-card">
+                    <div>
+                        <div class="review-card-top">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="verified-chip"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                        </div>
+                        <p class="review-quote">
+                            “Does exactly what it says. Clear to read and understand. This is now the second iPhone we’ve used it on and would certainly recommend this app.”
+                        </p>
+                    </div>
+                    <div class="review-author-bar">
+                        <span>colinandmandy94</span>
+                        <span class="review-device-tag"><i class="fa-brands fa-apple"></i> iPhone 16 Pro</span>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="review-card">
+                    <div>
+                        <div class="review-card-top">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="verified-chip"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                        </div>
+                        <p class="review-quote">
+                            “Found a hidden tracking app my ex had installed disguised as a system calculator. Certo removed it in 30 seconds and gave me my peace of mind back!”
+                        </p>
+                    </div>
+                    <div class="review-author-bar">
+                        <span>Jennifer Black</span>
+                        <span class="review-device-tag"><i class="fa-brands fa-android"></i> Samsung S24</span>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="review-card">
+                    <div>
+                        <div class="review-card-top">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="verified-chip"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                        </div>
+                        <p class="review-quote">
+                            “My son who works in cybersecurity suggested Certo after I was getting strange clicks on calls. Since running weekly scans I have zero malware issues.”
+                        </p>
+                    </div>
+                    <div class="review-author-bar">
+                        <span>Evelyn R., US</span>
+                        <span class="review-device-tag"><i class="fa-brands fa-apple"></i> iOS Deep Scan</span>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="review-card">
+                    <div>
+                        <div class="review-card-top">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="verified-chip"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                        </div>
+                        <p class="review-quote">
+                            “The permission auditor showed two free games had silent microphone access in the background. Worth every single penny for mobile privacy.”
+                        </p>
+                    </div>
+                    <div class="review-author-bar">
+                        <span>Marcus Vance</span>
+                        <span class="review-device-tag"><i class="fa-brands fa-android"></i> Pixel 9 Pro</span>
+                    </div>
+                </article>
+
+                <!-- Duplicate Set for Seamless Loop -->
+                <article class="review-card">
+                    <div>
+                        <div class="review-card-top">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="verified-chip"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                        </div>
+                        <p class="review-quote">
+                            “Does exactly what it says. Clear to read and understand. This is now the second iPhone we’ve used it on and would certainly recommend this app.”
+                        </p>
+                    </div>
+                    <div class="review-author-bar">
+                        <span>colinandmandy94</span>
+                        <span class="review-device-tag"><i class="fa-brands fa-apple"></i> iPhone 16 Pro</span>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div>
+                        <div class="review-card-top">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="verified-chip"><i class="fa-solid fa-circle-check"></i> Verified</span>
+                        </div>
+                        <p class="review-quote">
+                            “Found a hidden tracking app my ex had installed disguised as a system calculator. Certo removed it in 30 seconds and gave me my peace of mind back!”
+                        </p>
+                    </div>
+                    <div class="review-author-bar">
+                        <span>Jennifer Black</span>
+                        <span class="review-device-tag"><i class="fa-brands fa-android"></i> Samsung S24</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="press-bar">
+                <span class="press-label">Featured &amp; trusted in:</span>
+                <div class="press-logos">
+                    <span class="press-logo-item"><i class="fa-solid fa-satellite-dish"></i> CNBC</span>
+                    <span class="press-logo-item italic">NEW YORK POST</span>
+                    <span class="press-logo-item serif">Financial Times</span>
+                    <span class="press-logo-item serif">Reader’s Digest</span>
+                    <span class="press-logo-item">ZDNet</span>
+                    <span class="press-logo-item wired">WIRED</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+         5. INTERACTIVE PURE-CSS OS ARCHITECTURE TABS (iOS vs ANDROID)
+         ======================================================================== -->
+    <section class="os-tabs-section" id="os-platform">
+        <div class="container">
+            <div class="section-heading-center">
+                <span class="section-eyebrow eyebrow-violet">
+                    <i class="fa-solid fa-microchip"></i> Purpose-Built Architecture
+                </span>
+                <h2>At Certo, mobile security is not an afterthought — it’s what we do.</h2>
+                <p>Select your operating system below to see how our specialized engines uncover hidden threats that traditional antivirus apps miss.</p>
+            </div>
+
+            <!-- Pure-CSS Radio Switcher -->
+            <input type="radio" name="os-platform" id="tab-ios" class="os-radio-input" checked>
+            <input type="radio" name="os-platform" id="tab-android" class="os-radio-input">
+
+            <div class="os-tab-controls">
+                <div class="os-tab-pill-box">
+                    <label for="tab-ios" class="os-tab-label">
+                        <i class="fa-brands fa-apple"></i> Certo AntiSpy for iPhone &amp; iPad
+                    </label>
+                    <label for="tab-android" class="os-tab-label">
+                        <i class="fa-brands fa-android"></i> Certo Mobile Security for Android
+                    </label>
+                </div>
+            </div>
+
+            <div class="os-panels-wrapper">
+                <!-- PANEL 1: iOS ARCHITECTURE -->
+                <div class="os-panel panel-ios">
+                    <div class="os-panel-info">
+                        <h3>Deep iOS Forensics via Desktop USB Inspection</h3>
+                        <p>
+                            Apple’s iOS sandbox blocks on-device apps from scanning other system files. Certo AntiSpy overcomes this by scanning your iPhone or iPad via your PC or Mac—reaching deep system directories where stalkerware hides.
+                        </p>
+                        <div class="os-step-cards">
+                            <div class="os-step-item">
+                                <div class="step-num-badge">01</div>
+                                <div>
+                                    <h4>Connect iPhone to Mac or Windows PC</h4>
+                                    <p>Plug in via USB or Wi-Fi sync—no jailbreak or technical knowledge required.</p>
+                                </div>
+                            </div>
+                            <div class="os-step-item">
+                                <div class="step-num-badge">02</div>
+                                <div>
+                                    <h4>Deep Backup &amp; System Log Analysis</h4>
+                                    <p>Scans hidden configuration profiles, mSpy/Pegasus artifacts, and hidden jailbreaks.</p>
+                                </div>
+                            </div>
+                            <div class="os-step-item">
+                                <div class="step-num-badge">03</div>
+                                <div>
+                                    <h4>1-Click Threat Neutralization Guide</h4>
+                                    <p>Pinpoints exact malicious files and walks you through permanent removal.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#pricing" class="btn btn-amber">
+                            Download Certo for iPhone <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="os-visual-showcase">
+                        <div class="os-visual-header">
+                            <div class="os-visual-title">
+                                <i class="fa-brands fa-apple"></i>
+                                <div>
+                                    <h4>Certo AntiSpy iOS Core</h4>
+                                    <span>Supports iOS 12 through iOS 19+</span>
+                                </div>
+                            </div>
+                            <span class="tag-safe"><i class="fa-solid fa-check"></i> Apple Certified</span>
+                        </div>
+                        <div class="os-architecture-grid">
+                            <div class="arch-module">
+                                <i class="fa-solid fa-user-secret"></i>
+                                <h5>Stalkerware Forensics</h5>
+                                <p>Detects mSpy, FlexiSPY, Cocospy &amp; hidden iCloud sync relays.</p>
+                            </div>
+                            <div class="arch-module">
+                                <i class="fa-solid fa-unlock-keyhole"></i>
+                                <h5>Jailbreak Detector</h5>
+                                <p>Uncovers invisible Cydia/Sileo hooks and compromised bootloaders.</p>
+                            </div>
+                            <div class="arch-module">
+                                <i class="fa-solid fa-file-code"></i>
+                                <h5>MDM &amp; VPN Profiles</h5>
+                                <p>Flags rogue configuration certificates intercepting web traffic.</p>
+                            </div>
+                            <div class="arch-module">
+                                <i class="fa-solid fa-eye"></i>
+                                <h5>App Permission Audit</h5>
+                                <p>Lists every app with hidden camera, mic, or location history.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PANEL 2: ANDROID ARCHITECTURE -->
+                <div class="os-panel panel-android">
+                    <div class="os-panel-info">
+                        <h3>On-Device Real-Time Android Anti-Spyware Shield</h3>
+                        <p>
+                            Android’s open ecosystem makes it a prime target for invisible stalkerware APKs and malicious accessibility services. Our lightweight app protects your phone 24/7 directly from Google Play.
+                        </p>
+                        <div class="os-step-cards">
+                            <div class="os-step-item">
+                                <div class="step-num-badge">01</div>
+                                <div>
+                                    <h4>Instant On-Device Deep Scanner</h4>
+                                    <p>Scans every installed APK, hidden system daemon, and sideloaded package in seconds.</p>
+                                </div>
+                            </div>
+                            <div class="os-step-item">
+                                <div class="step-num-badge">02</div>
+                                <div>
+                                    <h4>Keylogger &amp; Accessibility Guard</h4>
+                                    <p>Detects apps abusing Android Accessibility permissions to read your WhatsApp &amp; Signal chats.</p>
+                                </div>
+                            </div>
+                            <div class="os-step-item">
+                                <div class="step-num-badge">03</div>
+                                <div>
+                                    <h4>Automated Scheduled Protection</h4>
+                                    <p>Runs silent daily scans and alerts you the second a suspicious app is installed.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#pricing" class="btn btn-amber">
+                            Get Certo for Android <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="os-visual-showcase">
+                        <div class="os-visual-header">
+                            <div class="os-visual-title">
+                                <i class="fa-brands fa-android"></i>
+                                <div>
+                                    <h4>Certo Android Shield</h4>
+                                    <span>Samsung, Pixel, Xiaomi, OnePlus &amp; more</span>
+                                </div>
+                            </div>
+                            <span class="tag-safe"><i class="fa-solid fa-bolt"></i> Real-Time Guard</span>
+                        </div>
+                        <div class="os-architecture-grid">
+                            <div class="arch-module">
+                                <i class="fa-solid fa-bug-slash"></i>
+                                <h5>1-Tap APK Removal</h5>
+                                <p>Instantly uninstalls disguised spyware apps that hide their launcher icon.</p>
+                            </div>
+                            <div class="arch-module">
+                                <i class="fa-solid fa-keyboard"></i>
+                                <h5>Keylogger Blocker</h5>
+                                <p>Neutralizes malicious keyboards capturing banking PINs and passwords.</p>
+                            </div>
+                            <div class="arch-module">
+                                <i class="fa-solid fa-tower-cell"></i>
+                                <h5>Call &amp; SMS Redirection</h5>
+                                <p>Checks if your calls or 2FA texts are silently forwarded to another number.</p>
+                            </div>
+                            <div class="arch-module">
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                                <h5>Data Breach Scanner</h5>
+                                <p>Monitors dark web dumps for your email and credential leaks.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+         6. SENIOR BENTO GRID OF 6 SECURITY CAPABILITIES WITH MICRO-ANIMATIONS
+         ======================================================================== -->
+    <section class="bento-features-section" id="features">
+        <div class="container">
+            <div class="section-heading-center">
+                <span class="section-eyebrow eyebrow-violet">
+                    <i class="fa-solid fa-layer-group"></i> 360° Mobile Defense
+                </span>
+                <h2>Get your freedom back, stop mobile spyware today</h2>
+                <p>Hover over any capability below to preview our active detection engines.</p>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Bento 1 -->
+                <div class="bento-card">
+                    <div>
+                        <div class="bento-anim-stage">
+                            <div class="stage-ripple"></div>
+                            <div class="stage-icon-main"><i class="fa-solid fa-user-secret"></i></div>
+                        </div>
+                        <h3>Spyware &amp; Stalkerware</h3>
+                        <p>Our proprietary heuristic engine identifies commercial spyware, hidden ghost apps, and state-grade surveillance tools.</p>
+                    </div>
+                    <span class="bento-status-foot"><i class="fa-solid fa-circle-check"></i> 450,000+ Signatures Tracked</span>
+                </div>
+
+                <!-- Bento 2 -->
+                <div class="bento-card">
+                    <div>
+                        <div class="bento-anim-stage">
+                            <div class="stage-icon-main"><i class="fa-solid fa-keyboard"></i></div>
+                        </div>
+                        <h3>Keylogger Neutralizer</h3>
+                        <p>Spot malicious third-party keyboards and screen-recorders capable of logging every password and private message you type.</p>
+                    </div>
+                    <span class="bento-status-foot"><i class="fa-solid fa-shield-halved"></i> Zero-Trust Input Audit</span>
+                </div>
+
+                <!-- Bento 3 -->
+                <div class="bento-card">
+                    <div>
+                        <div class="bento-anim-stage">
+                            <div class="stage-ripple"></div>
+                            <div class="stage-icon-main"><i class="fa-solid fa-location-crosshairs"></i></div>
+                        </div>
+                        <h3>Find Tracking Apps</h3>
+                        <p>Audit every app with background GPS, Bluetooth beacon, or hidden family-locator sharing privileges in one clear dashboard.</p>
+                    </div>
+                    <span class="bento-status-foot"><i class="fa-solid fa-satellite"></i> Real-Time Location Guard</span>
+                </div>
+
+                <!-- Bento 4 -->
+                <div class="bento-card">
+                    <div>
+                        <div class="bento-anim-stage">
+                            <div class="stage-laser-line"></div>
+                            <div class="stage-icon-main"><i class="fa-solid fa-microchip"></i></div>
+                        </div>
+                        <h3>OS Integrity Check</h3>
+                        <p>Verify your operating system for signs of unauthorized tampering such as hidden Jailbreaking, Rooting, or bypassed bootloaders.</p>
+                    </div>
+                    <span class="bento-status-foot"><i class="fa-solid fa-lock"></i> Deep Kernel Verification</span>
+                </div>
+
+                <!-- Bento 5 -->
+                <div class="bento-card">
+                    <div>
+                        <div class="bento-anim-stage">
+                            <div class="stage-icon-main"><i class="fa-solid fa-microphone-slash"></i></div>
+                            <div class="stage-wave-bars">
+                                <span class="wave-bar"></span>
+                                <span class="wave-bar"></span>
+                                <span class="wave-bar"></span>
+                                <span class="wave-bar"></span>
+                            </div>
+                        </div>
+                        <h3>Camera &amp; Mic Monitor</h3>
+                        <p>Uncover apps capable of silently activating your microphone or front camera without your knowledge or consent.</p>
+                    </div>
+                    <span class="bento-status-foot"><i class="fa-solid fa-eye-slash"></i> Anti-Eavesdropping Engine</span>
+                </div>
+
+                <!-- Bento 6 -->
+                <div class="bento-card">
+                    <div>
+                        <div class="bento-anim-stage">
+                            <div class="stage-icon-main"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        </div>
+                        <h3>Instant Threat Removal</h3>
+                        <p>Our intelligent scan either safely quarantines and removes threats for you or provides step-by-step forensic remediation.</p>
+                    </div>
+                    <span class="bento-status-foot"><i class="fa-solid fa-bolt"></i> 2-Minute Average Scan</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+         7. INTERACTIVE PURE-CSS PRICING & PLAN COMPARISON
+         ======================================================================== -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-heading-center">
+                <span class="section-eyebrow eyebrow-amber">
+                    <i class="fa-solid fa-crown"></i> Transparent Protection Plans
+                </span>
+                <h2>Is someone spying on your phone? Find out today.</h2>
+                <p>Backed by our 60-day money-back peace-of-mind guarantee.</p>
+            </div>
+
+            <!-- Pure-CSS Checkbox Billing Switcher -->
+            <input type="checkbox" id="billing-toggle" class="billing-checkbox" checked>
+            <div class="billing-toggle-bar">
+                <label for="billing-toggle" class="billing-switch-label">
+                    <span>Monthly Billing</span>
+                    <div class="switch-track">
+                        <div class="switch-thumb"></div>
+                    </div>
+                    <span>Annual Protection</span>
+                </label>
+                <span class="save-badge"><i class="fa-solid fa-fire"></i> SAVE 40%</span>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Plan 1: Standard -->
+                <div class="price-card">
+                    <div>
+                        <div class="price-tier-name">Certo Standard</div>
+                        <p class="price-tier-desc">Essential spyware &amp; system integrity scanning for 1 device.</p>
+
+                        <div class="price-value-monthly">
+                            <div class="price-amount">$9.99 <span>/ mo</span></div>
+                            <small class="price-billing-note">Billed monthly • Cancel anytime</small>
+                        </div>
+                        <div class="price-value-annual">
+                            <div class="price-amount">$5.99 <span>/ mo</span></div>
+                            <small class="price-billing-note">Billed $71.88 annually (Save 40%)</small>
+                        </div>
+
+                        <ul class="price-features">
+                            <li><i class="fa-solid fa-circle-check"></i> Protect 1 iPhone or Android device</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Full Spyware &amp; Keylogger Scan</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Jailbreak &amp; Root Integrity Audit</li>
+                            <li><i class="fa-solid fa-circle-check"></i> App Permission Inspector</li>
+                        </ul>
+                    </div>
+                    <a href="#os-platform" class="btn btn-glass-light" style="width: 100%;">Choose Standard</a>
+                </div>
+
+                <!-- Plan 2: Pro Security (Most Popular) -->
+                <div class="price-card featured">
+                    <span class="popular-ribbon"><i class="fa-solid fa-star"></i> Most Popular</span>
+                    <div>
+                        <div class="price-tier-name">Certo Pro Security</div>
+                        <p class="price-tier-desc">Complete forensic deep scan + real-time breach alerts for up to 3 devices.</p>
+
+                        <div class="price-value-monthly">
+                            <div class="price-amount">$14.99 <span>/ mo</span></div>
+                            <small class="price-billing-note">Billed monthly • Cancel anytime</small>
+                        </div>
+                        <div class="price-value-annual">
+                            <div class="price-amount">$8.99 <span>/ mo</span></div>
+                            <small class="price-billing-note">Billed $107.88 annually (Save 40%)</small>
+                        </div>
+
+                        <ul class="price-features">
+                            <li><i class="fa-solid fa-circle-check"></i> Protect up to 3 iOS/Android devices</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Deep iCloud &amp; USB Backup Forensics</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Hidden Mic &amp; GPS Stalkerware Removal</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Dark Web Credential Breach Monitor</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Priority 24/7 Cyber Specialist Support</li>
+                        </ul>
+                    </div>
+                    <a href="#os-platform" class="btn btn-amber" style="width: 100%;">
+                        Get Pro Security <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Plan 3: Family Ultimate -->
+                <div class="price-card">
+                    <div>
+                        <div class="price-tier-name">Certo Family Ultimate</div>
+                        <p class="price-tier-desc">Total household mobile privacy across 10 phones &amp; tablets.</p>
+
+                        <div class="price-value-monthly">
+                            <div class="price-amount">$24.99 <span>/ mo</span></div>
+                            <small class="price-billing-note">Billed monthly • Cancel anytime</small>
+                        </div>
+                        <div class="price-value-annual">
+                            <div class="price-amount">$14.99 <span>/ mo</span></div>
+                            <small class="price-billing-note">Billed $179.88 annually (Save 40%)</small>
+                        </div>
+
+                        <ul class="price-features">
+                            <li><i class="fa-solid fa-circle-check"></i> Protect up to 10 family devices</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Everything in Pro Security included</li>
+                            <li><i class="fa-solid fa-circle-check"></i> PDF Forensic Reports for Legal Evidence</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Dedicated 1-on-1 Security Consultation</li>
+                        </ul>
+                    </div>
+                    <a href="#os-platform" class="btn btn-glass-light" style="width: 100%;">Choose Family Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+         8. DUAL ACTION CARDS SECTION (READ OUR STORY & HELP CENTER)
+         ======================================================================== -->
+    <section class="dual-cards-section">
+        <div class="container dual-cards-grid">
+            <div class="action-card action-card-amber">
+                <div>
+                    <h3>Read our story</h3>
+                    <p>Discover why over 2.4 million people and leading journalists trust Certo to safeguard their mobile world.</p>
+                </div>
+                <a href="#insights" class="btn btn-violet">
+                    About Certo <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="action-card action-card-soft">
+                <div>
+                    <h3>Help Center &amp; Guides</h3>
+                    <p>Step-by-step spyware removal tutorials, getting started guides, and expert answers.</p>
+                </div>
+                <a href="#faq" class="btn btn-outline-dark">
+                    Visit Help Center
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+         9. LATEST INSIGHTS / BLOG SECTION
+         ======================================================================== -->
+    <section class="insights-section" id="insights">
+        <div class="container">
+            <div class="section-heading-center">
+                <span class="section-eyebrow eyebrow-violet">
+                    <i class="fa-solid fa-book-open"></i> Cyber Threat Lab
+                </span>
+                <h2>Latest mobile security insights</h2>
+            </div>
+
+            <div class="insights-grid">
+                <article class="insight-card">
+                    <div class="insight-thumb thumb-1">
+                        <span class="insight-badge">Expertise</span>
+                        <div class="thumb-icon-wrap">
+                            <i class="fa-solid fa-eye-slash"></i>
+                        </div>
+                    </div>
+                    <div class="insight-body">
+                        <div>
+                            <h3>7 Warning Signs Your Ex Is Spying On Your Phone</h3>
+                            <p>
+                                In an ideal world, after a relationship ends both partners move on. Here is how to tell if commercial stalkerware was secretly installed on your device.
+                            </p>
+                        </div>
+                        <a href="#faq" class="read-more-link">Read article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="insight-card">
+                    <div class="insight-thumb thumb-2">
+                        <span class="insight-badge">Guides</span>
+                        <div class="thumb-icon-wrap">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                    </div>
+                    <div class="insight-body">
+                        <div>
+                            <h3>How to Remove a Hacker from Your Samsung Phone</h3>
+                            <p>
+                                Samsung Galaxy devices are the most popular Android smartphones worldwide—learn the exact steps to audit permissions and purge hidden trojans.
+                            </p>
+                        </div>
+                        <a href="#faq" class="read-more-link">Read article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="insight-card">
+                    <div class="insight-thumb thumb-3">
+                        <span class="insight-badge">Forensics</span>
+                        <div class="thumb-icon-wrap">
+                            <i class="fa-solid fa-tower-broadcast"></i>
+                        </div>
+                    </div>
+                    <div class="insight-body">
+                        <div>
+                            <h3>Is Your Cell Phone Under Silent Surveillance?</h3>
+                            <p>
+                                From rogue configuration profiles to cloned iCloud backups, discover the subtle forensic indicators that your private messages are being intercepted.
+                            </p>
+                        </div>
+                        <a href="#faq" class="read-more-link">Read article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+         10. PURE-CSS INTERACTIVE FAQ ACCORDION
+         ======================================================================== -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-heading-center">
+                <span class="section-eyebrow eyebrow-violet">
+                    <i class="fa-solid fa-circle-question"></i> Frequently Asked Questions
+                </span>
+                <h2>Everything you need to know about mobile spyware</h2>
+            </div>
+
+            <div class="faq-container">
+                <details class="faq-item" open>
+                    <summary>
+                        <span>Why does Certo AntiSpy for iPhone run on a computer instead of an iOS app?</span>
+                        <span class="faq-icon-circle"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="faq-answer">
+                        Apple’s iOS security model ("sandboxing") prevents any App Store app from scanning other apps or system files on an iPhone. Any iOS app claiming to scan your iPhone for spyware directly on the phone cannot access deep system directories. By connecting your iPhone to a PC or Mac, Certo AntiSpy performs a true forensic inspection of the entire device backup and system logs.
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span>Will the person spying on my phone know that I ran a Certo scan?</span>
+                        <span class="faq-icon-circle"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="faq-answer">
+                        No. Certo’s scanning process is 100% silent and offline-safe. Running a scan will never send an alert or notification to the person who installed stalkerware on your device, allowing you to gather forensic evidence or remove the threat safely.
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span>Can Certo detect commercial stalkerware like mSpy, FlexiSPY, and hidden keyloggers?</span>
+                        <span class="faq-icon-circle"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="faq-answer">
+                        Yes. Our threat intelligence lab continuously reverse-engineers the latest versions of mSpy, FlexiSPY, Cocospy, Hoverwatch, uMobix, and custom keyloggers—even when they disguise themselves under system names like "Settings Helper" or hide their app icon.
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span>Is my personal data, photos, or messages uploaded to Certo servers?</span>
+                        <span class="faq-icon-circle"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="faq-answer">
+                        Never. Your privacy is our core mission. All scans happen locally on your device or computer. None of your photos, messages, contacts, or personal files ever leave your machine.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================
+         11. FOOTER (#0A0724 DEEP OBSIDIAN)
+         ======================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col-1">
+                    <a href="#" class="logo" aria-label="Certo Home">
+                        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="11" fill="#FFC247"/>
+                            <path d="M20 6.5L8.5 11.8V20.5C8.5 28 13.4 34.6 20 36.8C26.6 34.6 31.5 28 31.5 20.5V11.8L20 6.5Z" fill="#0A0724"/>
+                            <path d="M16.2 21.3L19 24.1L24.8 17.3" stroke="#FFC247" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="brand-font">Certo</span>
+                    </a>
+                    <h3>Scan. Detect. Remove.</h3>
+                    <div class="social-links">
+                        <a href="#twitter" class="social-btn" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#facebook" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#youtube" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#linkedin" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="footer-legal-links">
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Service</a>
+                        <a href="#cookies">Security Ethics</a>
+                    </div>
+                    <p class="copyright-text">
+                        Copyright © 2026 Certo Software Limited | Registered in England &amp; Wales No. 10072356<br>
+                        Crafted with 100% Pure HTML5 &amp; CSS3 Architecture
+                    </p>
+                </div>
+
+                <div class="footer-col-2">
+                    <h3>Platform</h3>
+                    <ul class="footer-nav-list">
+                        <li><a href="#os-platform">Certo for iPhone</a></li>
+                        <li><a href="#os-platform">Certo for Android</a></li>
+                        <li><a href="#features">Security Engine</a></li>
+                        <li><a href="#pricing">Pricing Plans</a></li>
+                        <li><a href="#faq">Help &amp; FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-3">
+                    <div class="newsletter-card">
+                        <h3>Sign up to our cyber alert</h3>
+                        <p>Receive breaking mobile security alerts, zero-day warnings &amp; exclusive offers straight to your inbox.</p>
+                        <form class="newsletter-form" action="#subscribe" method="get">
+                            <input type="email" name="email" placeholder="Enter your email address..." required aria-label="Email address">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer-disclaimer">
+                Apple, the Apple logo, and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc. Android, Google Play and the Google Play logo are trademarks of Google LLC.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
