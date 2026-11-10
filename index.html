@@ -4,21 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certo Software — Award-Winning Mobile Security & Anti-Spyware</title>
-    <!-- Website Tab Favicon Icon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%23FFC247'/%3E%3Cpath d='M20 6.5L8.5 11.8V20.5C8.5 28 13.4 34.6 20 36.8C26.6 34.6 31.5 28 31.5 20.5V11.8L20 6.5Z' fill='%230A0724'/%3E%3Cpath d='M16.2 21.3L19 24.1L24.8 17.3' stroke='%23FFC247' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
-    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-    <!-- Font Awesome 6 Free CSS ONLY (Zero JS) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
 
-    <!-- ========================================================================
-         PURE-CSS INTERACTIVE "30-SECOND SECURITY SELF-CHECK" MODAL
-         ======================================================================== -->
     <input type="checkbox" id="scanner-modal-toggle" class="audit-modal-checkbox">
     <div class="audit-modal-backdrop">
         <div class="audit-modal-box">
@@ -70,13 +64,9 @@
         </div>
     </div>
 
-    <!-- ========================================================================
-         1. STICKY GLASSMORPHIC HEADER WITH ANIMATED MOBILE BURGER & DRAWER
-         ======================================================================== -->
     <header class="site-header">
         <div class="container header-inner">
             <a href="#" class="logo" aria-label="Certo Home">
-                <!-- Inline SVG used ONLY for the main Certo brand logo mark -->
                 <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="40" height="40" rx="11" fill="#FFC247"/>
                     <path d="M20 6.5L8.5 11.8V20.5C8.5 28 13.4 34.6 20 36.8C26.6 34.6 31.5 28 31.5 20.5V11.8L20 6.5Z" fill="#0A0724"/>
@@ -85,10 +75,8 @@
                 <span class="brand-font">Certo</span>
             </a>
 
-            <!-- 100% Pure CSS Mobile Burger Checkbox Hack -->
             <input type="checkbox" id="mobile-menu-toggle" class="nav-toggle-checkbox">
 
-            <!-- Mobile Header Right Controls (Animated Burger Button) -->
             <div class="mobile-header-quick">
                 <label for="mobile-menu-toggle" class="burger-btn" aria-label="Toggle Mobile Navigation">
                     <span class="burger-status-dot" title="Protection Engine Online"></span>
@@ -100,12 +88,9 @@
                 </label>
             </div>
 
-            <!-- Clickable Glass Backdrop Overlay to Close Mobile Drawer -->
             <label for="mobile-menu-toggle" class="mobile-backdrop" aria-label="Close Mobile Menu Backdrop"></label>
 
-            <!-- Navigation Wrapper (Desktop Navbar + Mobile Slide-Over Glassmorphic Drawer) -->
             <div class="nav-wrapper mobile-drawer">
-                <!-- Mobile Drawer Top Bar (Visible on Mobile/Tablet) -->
                 <div class="drawer-mobile-header">
                     <div class="drawer-brand-title">
                         <i class="fa-solid fa-shield-halved" style="color: var(--amber);"></i>
@@ -117,7 +102,6 @@
                     </label>
                 </div>
 
-                <!-- Desktop Navigation Links -->
                 <ul class="nav-links">
                     <li class="has-dropdown">
                         <a href="#os-platform"><i class="fa-solid fa-cube" style="color: var(--amber); font-size: 13px;"></i> Products <i class="fa-solid fa-chevron-down"></i></a>
@@ -161,7 +145,6 @@
                     </li>
                 </ul>
 
-                <!-- Mobile Slide-Over Accent Cards & Collapsible Resources Sub-Menu -->
                 <div class="drawer-mobile-Accordion">
                     <a href="#os-platform" class="mobile-nav-card">
                         <div class="mobile-nav-card-left">
@@ -207,7 +190,6 @@
                         <i class="fa-solid fa-chevron-right" style="color: var(--amber); font-size: 13px;"></i>
                     </a>
 
-                    <!-- Collapsible <details> Sub-Menu for Resources -->
                     <details class="mobile-details-group">
                         <summary>
                             <div class="mobile-nav-card-left">
@@ -227,7 +209,6 @@
                     </details>
                 </div>
 
-                <!-- Action Buttons (Desktop & Mobile Drawer) -->
                 <div class="header-actions">
                     <label for="scanner-modal-toggle" class="btn-header-audit">
                         <i class="fa-solid fa-crosshairs"></i> 30-Sec Spyware Check
@@ -237,7 +218,6 @@
                     </a>
                 </div>
 
-                <!-- Mobile Drawer Bottom CTA & Live Protection Badge -->
                 <div class="drawer-mobile-footer">
                     <a href="#pricing" class="btn btn-amber" style="width: 100%;">
                         Get Certo Now <i class="fa-solid fa-arrow-right"></i>
@@ -251,15 +231,11 @@
         </div>
     </header>
 
-    <!-- ========================================================================
-         3. HERO SECTION WITH INTERACTIVE 3D PHONE & LIVE CSS RADAR SCANNER
-         ======================================================================== -->
     <section class="hero-section">
         <div class="mesh-orb orb-violet"></div>
         <div class="mesh-orb orb-amber"></div>
 
         <div class="container hero-grid">
-            <!-- Left Column -->
             <div class="hero-content">
                 <div class="hero-top-icon-badge">
                     <div class="hero-crown-icon">
@@ -307,12 +283,9 @@
                 </div>
             </div>
 
-            <!-- Right Column: Interactive Pure-CSS Phone Scanner -->
             <div class="hero-phone-stage">
-                <!-- Hidden Checkbox to Toggle Phone Screen Mode -->
                 <input type="checkbox" id="phone-mode-toggle" class="phone-mode-checkbox">
 
-                <!-- Interactive Mode Switcher Pill -->
                 <label for="phone-mode-toggle" class="phone-mode-switcher" title="Click to switch phone screen view">
                     <span class="mode-pill mode-pill-scan">
                         <i class="fa-solid fa-satellite-dish"></i> Live Radar Scan
@@ -322,7 +295,6 @@
                     </span>
                 </label>
 
-                <!-- 4 Floating Glassmorphic 3D Cards -->
                 <div class="float-card float-card-1">
                     <div class="float-icon icon-coral"><i class="fa-solid fa-microphone-slash"></i></div>
                     <div class="float-meta">
@@ -355,7 +327,6 @@
                     </div>
                 </div>
 
-                <!-- Smartphone Chassis -->
                 <div class="phone-chassis">
                     <div class="phone-inner-screen">
                         <div>
@@ -369,7 +340,6 @@
                                 <span><i class="fa-solid fa-wifi"></i> <i class="fa-solid fa-battery-full"></i></span>
                             </div>
 
-                            <!-- VIEW A: LIVE RADAR SCAN -->
                             <div class="screen-view-scan">
                                 <div class="radar-circle-wrap">
                                     <div class="radar-sweep-beam"></div>
@@ -405,7 +375,6 @@
                                 </div>
                             </div>
 
-                            <!-- VIEW B: COMPLETED THREAT REPORT -->
                             <div class="screen-view-report">
                                 <div class="report-shield-hero">
                                     <i class="fa-solid fa-circle-check"></i>
@@ -443,9 +412,6 @@
         </div>
     </section>
 
-    <!-- ========================================================================
-         4. INFINITE PURE-CSS SOCIAL PROOF MARQUEE (#FFC247)
-         ======================================================================== -->
     <section class="reviews-marquee-section">
         <div class="container">
             <div class="reviews-header-flex">
@@ -460,10 +426,8 @@
             </div>
         </div>
 
-        <!-- Continuous Pure-CSS Marquee (Pauses on Hover) -->
         <div class="marquee-viewport">
             <div class="marquee-track">
-                <!-- Card 1 -->
                 <article class="review-card">
                     <div>
                         <div class="review-card-top">
@@ -482,7 +446,6 @@
                     </div>
                 </article>
 
-                <!-- Card 2 -->
                 <article class="review-card">
                     <div>
                         <div class="review-card-top">
@@ -501,7 +464,6 @@
                     </div>
                 </article>
 
-                <!-- Card 3 -->
                 <article class="review-card">
                     <div>
                         <div class="review-card-top">
@@ -520,7 +482,6 @@
                     </div>
                 </article>
 
-                <!-- Card 4 -->
                 <article class="review-card">
                     <div>
                         <div class="review-card-top">
@@ -539,7 +500,6 @@
                     </div>
                 </article>
 
-                <!-- Duplicate Set for Seamless Loop -->
                 <article class="review-card">
                     <div>
                         <div class="review-card-top">
@@ -593,9 +553,6 @@
         </div>
     </section>
 
-    <!-- ========================================================================
-         5. INTERACTIVE PURE-CSS OS ARCHITECTURE TABS (iOS vs ANDROID)
-         ======================================================================== -->
     <section class="os-tabs-section" id="os-platform">
         <div class="container">
             <div class="section-heading-center">
@@ -606,7 +563,6 @@
                 <p>Select your operating system below to see how our specialized engines uncover hidden threats that traditional antivirus apps miss.</p>
             </div>
 
-            <!-- Pure-CSS Radio Switcher -->
             <input type="radio" name="os-platform" id="tab-ios" class="os-radio-input" checked>
             <input type="radio" name="os-platform" id="tab-android" class="os-radio-input">
 
@@ -622,7 +578,6 @@
             </div>
 
             <div class="os-panels-wrapper">
-                <!-- PANEL 1: iOS ARCHITECTURE -->
                 <div class="os-panel panel-ios">
                     <div class="os-panel-info">
                         <h3>Deep iOS Forensics via Desktop USB Inspection</h3>
@@ -693,7 +648,6 @@
                     </div>
                 </div>
 
-                <!-- PANEL 2: ANDROID ARCHITECTURE -->
                 <div class="os-panel panel-android">
                     <div class="os-panel-info">
                         <h3>On-Device Real-Time Android Anti-Spyware Shield</h3>
@@ -767,9 +721,6 @@
         </div>
     </section>
 
-    <!-- ========================================================================
-         6. SENIOR BENTO GRID OF 6 SECURITY CAPABILITIES WITH MICRO-ANIMATIONS
-         ======================================================================== -->
     <section class="bento-features-section" id="features">
         <div class="container">
             <div class="section-heading-center">
@@ -781,7 +732,6 @@
             </div>
 
             <div class="bento-grid">
-                <!-- Bento 1 -->
                 <div class="bento-card">
                     <div>
                         <div class="bento-anim-stage">
@@ -794,7 +744,6 @@
                     <span class="bento-status-foot"><i class="fa-solid fa-circle-check"></i> 450,000+ Signatures Tracked</span>
                 </div>
 
-                <!-- Bento 2 -->
                 <div class="bento-card">
                     <div>
                         <div class="bento-anim-stage">
@@ -806,7 +755,6 @@
                     <span class="bento-status-foot"><i class="fa-solid fa-shield-halved"></i> Zero-Trust Input Audit</span>
                 </div>
 
-                <!-- Bento 3 -->
                 <div class="bento-card">
                     <div>
                         <div class="bento-anim-stage">
@@ -819,7 +767,6 @@
                     <span class="bento-status-foot"><i class="fa-solid fa-satellite"></i> Real-Time Location Guard</span>
                 </div>
 
-                <!-- Bento 4 -->
                 <div class="bento-card">
                     <div>
                         <div class="bento-anim-stage">
@@ -832,7 +779,6 @@
                     <span class="bento-status-foot"><i class="fa-solid fa-lock"></i> Deep Kernel Verification</span>
                 </div>
 
-                <!-- Bento 5 -->
                 <div class="bento-card">
                     <div>
                         <div class="bento-anim-stage">
@@ -850,7 +796,6 @@
                     <span class="bento-status-foot"><i class="fa-solid fa-eye-slash"></i> Anti-Eavesdropping Engine</span>
                 </div>
 
-                <!-- Bento 6 -->
                 <div class="bento-card">
                     <div>
                         <div class="bento-anim-stage">
@@ -865,9 +810,6 @@
         </div>
     </section>
 
-    <!-- ========================================================================
-         7. INTERACTIVE PURE-CSS PRICING & PLAN COMPARISON
-         ======================================================================== -->
     <section class="pricing-section" id="pricing">
         <div class="container">
             <div class="section-heading-center">
@@ -878,7 +820,6 @@
                 <p>Backed by our 60-day money-back peace-of-mind guarantee.</p>
             </div>
 
-            <!-- Pure-CSS Checkbox Billing Switcher -->
             <input type="checkbox" id="billing-toggle" class="billing-checkbox" checked>
             <div class="billing-toggle-bar">
                 <label for="billing-toggle" class="billing-switch-label">
@@ -892,7 +833,6 @@
             </div>
 
             <div class="pricing-grid">
-                <!-- Plan 1: Standard -->
                 <div class="price-card">
                     <div>
                         <div class="price-tier-name">Certo Standard</div>
@@ -917,7 +857,6 @@
                     <a href="#os-platform" class="btn btn-glass-light" style="width: 100%;">Choose Standard</a>
                 </div>
 
-                <!-- Plan 2: Pro Security (Most Popular) -->
                 <div class="price-card featured">
                     <span class="popular-ribbon"><i class="fa-solid fa-star"></i> Most Popular</span>
                     <div>
@@ -946,7 +885,6 @@
                     </a>
                 </div>
 
-                <!-- Plan 3: Family Ultimate -->
                 <div class="price-card">
                     <div>
                         <div class="price-tier-name">Certo Family Ultimate</div>
@@ -974,9 +912,6 @@
         </div>
     </section>
 
-    <!-- ========================================================================
-         8. DUAL ACTION CARDS SECTION (READ OUR STORY & HELP CENTER)
-         ======================================================================== -->
     <section class="dual-cards-section">
         <div class="container dual-cards-grid">
             <div class="action-card action-card-amber">
@@ -1001,9 +936,6 @@
         </div>
     </section>
 
-    <!-- ========================================================================
-         9. LATEST INSIGHTS / BLOG SECTION
-         ======================================================================== -->
     <section class="insights-section" id="insights">
         <div class="container">
             <div class="section-heading-center">
@@ -1071,9 +1003,6 @@
         </div>
     </section>
 
-    <!-- ========================================================================
-         10. PURE-CSS INTERACTIVE FAQ ACCORDION
-         ======================================================================== -->
     <section class="faq-section" id="faq">
         <div class="container">
             <div class="section-heading-center">
@@ -1127,9 +1056,6 @@
         </div>
     </section>
 
-    <!-- ========================================================================
-         11. FOOTER (#0A0724 DEEP OBSIDIAN)
-         ======================================================================== -->
     <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
